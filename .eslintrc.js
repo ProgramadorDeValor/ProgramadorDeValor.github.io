@@ -25,6 +25,7 @@ module.exports = {
     "no-useless-constructor": "off",
     "vue/component-tags-order": ["warn", {
       "order": ["template", "style", "script"]
-    }]
+    }],
+    "vue/multi-word-component-names": ["warn"]
   }
 }
