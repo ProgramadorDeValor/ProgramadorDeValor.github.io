@@ -7,7 +7,7 @@
       <v-row
         align="center"
         justify="center"
-        class="fill-height"
+        class="fill-height pt-4 pb-3"
       >
         <v-col
           align-self="center"
