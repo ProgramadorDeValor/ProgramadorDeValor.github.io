@@ -1,56 +1,58 @@
 <template>
   <v-card
-    class="mx-auto"
+    class="mx-auto pb-3"
     max-width="300"
     :color="cardColor"
     outlined
     flat
   >
     <v-container>
-      <v-row>
-        <v-list
-          three-line
-          color="transparent"
-        >
-          <v-list-item>
-            <v-list-item-avatar :color="avatarColor">
-              <slot name="avatar">
-                <span class="white--text headline">{{ initialLetter }}</span>
-              </slot>
-            </v-list-item-avatar>
-            <v-list-item-content>
-              <v-list-item-title class="mb-1 body-1" style="max-width: 300px">
-                <div :class="`${textColor}--text`">
-                  {{ title }}
-                </div>
-              </v-list-item-title>
-              <v-list-item-subtitle>
-                <v-row>
-                  <v-col cols="12">
-                    <div
-                      :class="`text-body-2 mx-auto ${textColor}--text`"
-                    >
-                      {{ levelLabel }}: {{ level }}
-                    </div>
-                  </v-col>
-                </v-row>
-                <v-row dense no-gutters>
-                  <v-col cols="3" class="mx-1">
-                    <v-progress-linear :value="bar1Calc" :color="progressBarColor" />
-                  </v-col>
-                  <v-col cols="3" class="mx-1">
-                    <v-progress-linear :value="bar2Calc" :color="progressBarColor" />
-                  </v-col>
-                  <v-col cols="3" class="mx-1">
-                    <v-progress-linear :value="bar3Calc" :color="progressBarColor" />
-                  </v-col>
-                </v-row>
-              </v-list-item-subtitle>
-            </v-list-item-content>
-          </v-list-item>
-        </v-list>
+      <v-row class="justify-start align-center">
+        <v-col cols="12">
+          <v-list
+            three-line
+            color="transparent"
+          >
+            <v-list-item>
+              <v-list-item-avatar :color="avatarColor">
+                <slot name="avatar">
+                  <span class="white--text headline">{{ initialLetter }}</span>
+                </slot>
+              </v-list-item-avatar>
+              <v-list-item-content>
+                <v-list-item-title class="mb-1 body-1" style="max-width: 300px">
+                  <div :class="`${textColor}--text`">
+                    {{ title }}
+                  </div>
+                </v-list-item-title>
+                <v-list-item-subtitle>
+                  <v-row>
+                    <v-col cols="12">
+                      <div
+                        :class="`text-body-2 mx-auto ${textColor}--text`"
+                      >
+                        {{ levelLabel }}: {{ level }}
+                      </div>
+                    </v-col>
+                  </v-row>
+                  <v-row dense class="pt-2">
+                    <v-col cols="4" class="">
+                      <v-progress-linear :value="bar1Calc" :color="progressBarColor" />
+                    </v-col>
+                    <v-col cols="4" class="">
+                      <v-progress-linear :value="bar2Calc" :color="progressBarColor" />
+                    </v-col>
+                    <v-col cols="4" class="">
+                      <v-progress-linear :value="bar3Calc" :color="progressBarColor" />
+                    </v-col>
+                  </v-row>
+                </v-list-item-subtitle>
+              </v-list-item-content>
+            </v-list-item>
+          </v-list>
+        </v-col>
       </v-row>
-      <v-row class="mx-auto">
+      <v-row class="mx-auto pb-3">
         <v-expansion-panels accordion hover>
           <v-expansion-panel>
             <v-expansion-panel-header
@@ -96,7 +98,7 @@ export default {
     },
     level: {
       type: String,
-      default: 'Iniciante'
+      default: 'Estudo'
     },
     descriptionTitle: {
       type: String,
@@ -129,7 +131,7 @@ export default {
   },
   data () {
     return {
-      levelLabel: 'Nível'
+      levelLabel: 'Utilização'
     }
   },
   computed: {
