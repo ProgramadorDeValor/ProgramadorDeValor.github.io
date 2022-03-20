@@ -22,7 +22,7 @@ jobs:
         uses: actions/checkout@master
 
       - name: Setup node env
-        uses: actions/setup-node@latest
+        uses: actions/setup-node@3
         with:
           node-version: ${{ matrix.node }}
 
