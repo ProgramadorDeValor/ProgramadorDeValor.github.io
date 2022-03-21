@@ -36,7 +36,7 @@ export default {
       systems: [
         {
           title: 'C#',
-          level: 'Diário',
+          level: '776+',
           avatarColor: 'purple darken-1',
           cardColor: 'purple darken-3',
           bar: 100,
@@ -44,8 +44,17 @@ export default {
           description: 'Winforms e APIS, certificação 70-483'
         },
         {
+          title: 'VB.NET',
+          level: '238+',
+          avatarColor: 'purple darken-1',
+          cardColor: 'purple darken-3',
+          bar: 100,
+          avatarLetter: 'VB',
+          description: 'Winforms'
+        },
+        {
           title: 'VueJs',
-          level: 'Diario',
+          level: '820+',
           cardColor: 'teal lighten-1',
           avatarColor: 'teal darken-4',
           barColor: 'white',
@@ -54,7 +63,7 @@ export default {
         },
         {
           title: 'MS SQL',
-          level: 'Diario',
+          level: '200+',
           cardColor: 'red lighten-2',
           avatarColor: 'teal darken-4',
           barColor: 'white',
@@ -66,21 +75,21 @@ export default {
           avatarColor: 'red darken-2',
           cardColor: 'grey lighten-5',
           textColor: 'red',
-          level: 'Estudo',
+          level: '826+',
           bar: 30,
           description: 'APIS e Pacotes Composer'
         },
         {
           title: 'Flutter',
-          level: 'Estudo',
+          level: '30+',
           cardColor: 'blue lighten-2',
           avatarColor: 'blue darken-4',
           bar: 10,
-          description: 'Em Fase aprendizado'
+          description: 'Pequenos Projetos Pessoais e de Estudo'
         },
         {
           title: 'Workday',
-          level: 'Raro',
+          level: '100+',
           cardColor: 'blue darken-3',
           avatarColor: 'orange darken-1',
           bar: 10,
@@ -88,7 +97,7 @@ export default {
         },
         {
           title: 'Fatorhweb',
-          level: 'Raro',
+          level: '100+',
           cardColor: 'blue darken-4',
           avatarColor: 'lime darken-4',
           bar: 10,
@@ -97,7 +106,7 @@ export default {
         },
         {
           title: 'xMII - SAP',
-          level: 'Frequente',
+          level: '150+',
           cardColor: 'blue darken-4',
           avatarColor: 'black',
           bar: 70,
