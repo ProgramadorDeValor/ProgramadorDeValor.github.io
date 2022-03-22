@@ -5,7 +5,7 @@
         <v-card-title class="title">
           Curriculo
         </v-card-title>
-        <v-row justify="center">
+        <v-row justify="center" class="pb-3">
           <v-col
             sm="6"
             align="center"
@@ -41,7 +41,7 @@
         <v-card-title class="title">
           Contato
         </v-card-title>
-        <v-row justify="center">
+        <v-row justify="center" class="pb-3">
           <v-col cols="4" align="right">
             <v-btn
               fab

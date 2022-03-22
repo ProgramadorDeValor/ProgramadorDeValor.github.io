@@ -5,7 +5,7 @@
         <v-card-title class="title">
           Projetos
         </v-card-title>
-        <v-row>
+        <v-row class="pb-2">
           <v-col
             v-for="project in projects"
             :key="project.id"
