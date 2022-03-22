@@ -7,7 +7,7 @@
       <v-row
         align="center"
         justify="center"
-        class="fill-height"
+        class="fill-height pt-4 pb-3"
       >
         <v-col
           align-self="center"
@@ -33,7 +33,7 @@
                 Daniel S F Silva
               </v-list-item-title>
               <v-list-item-subtitle class="text-body-1">
-                Backend Developer
+                FullStack Developer
               </v-list-item-subtitle>
             </v-list-item-content>
           </v-list-item>

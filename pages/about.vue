@@ -124,24 +124,54 @@ export default {
   name: 'About',
   data () {
     return {
-      aboutMe: '"Um desenvolvedor backend que adora discutir e desenvolver ideias e projetos novos. Meus pontos ' +
-        'mais fortes estão em C# e Laravel e atualmente caminhando também no aprendizado de VueJS para aumentar minhas habilidades no frontend."',
+      aboutMe: '" Desenvolvedor Fullstack Sênior que adora inovar, discutir e desenvolver ideias e projetos novos. ' +
+        'Devido a experiência como Analista de Negócios, tenho um olhar bem afiado para identificar a raíz do problema ' +
+        'ou encontrar quem saiba, fazer a ponte entre as diversas partes envolvidas e então elaborar e desenvolver a melhor solução. ' +
+        'Atualmente, meus pontos mais fortes estão em .Net com C# e Vue.Js. "',
       experienceItems: [
         {
-          title: 'Analista de Sistemas III - Amcor',
+          title: 'Desenvolvedor .NET Sênior - Amcor',
           icon: 'mdi-star',
-          year: '2018 - Presente',
+          year: '2020 - Presente',
           color: 'primary',
           description: [
-            'Atuando em um time glogbal de desenvolvimento. ',
-            '- Workday relatórios e Integrações',
-            '- Desenvolvimento e manutenção em C# e Vb.net para sistemas de Chão de Fábrica.']
+            '- Acompanhamento da mudança de escopo para que o time atue e desenvolva soluções globalmente',
+            '- Estudo e implementação de Azure Devops como padrão para a companhia e para os times de desenvolvimento',
+            '- Elaboração de guidelines e boas práticas para serem seguidas pelos desenvolvedores do time',
+            '- Desenvolvimento, manutenção e integração em C# e Vb.net para sistemas de Chão de Fábrica.',
+            '- Participação de projetos e desenvolvimento que impactam Europa, América do Norte e Brasil',
+            '- Refatoração de sistemas legados, trazendo-os para o ambiente .NET Core e utilizando conceitos modernos ' +
+            'como arquitetura de micro serviços, mensageria, testes automatizados e deploys automatizados com Azure Devops',
+            '- Densevolvimento de Sistemas usando Vue.Js no Frontend integrando com .Net Core'
+          ]
+        },
+        {
+          title: 'Desenvolvedor Pleno - Amcor',
+          icon: 'mdi-account',
+          year: '2018 - 2020',
+          color: 'indigo',
+          description: [
+            '- Mudança para atuar com o time de desenvolvimento nos Estados Unidos dentro da Amcor',
+            '- Densevolvimento de relatórios e Integrações na ferramenta Workday',
+            '- Desenvolvimento, manutenção e integração em C# e Vb.net para sistemas de Chão de Fábrica',
+            '- Desenvolvimento e manutenção de integração entre ERP\'s e SAP usando XMII'
+          ]
+        },
+        {
+          title: 'Founder/Developer - Tamarindo Soluções',
+          year: '2016 - 2019',
+          icon: 'mdi-rocket',
+          color: 'orange',
+          description: [
+            '- Projeto de Startup que ocorreu em paralelo ao meu trabalho na Amcor',
+            '- Planejamento e Desenvolvimento da Plataforma Tamarindo (descontinuada) com Laravel e Vue.Js'
+          ]
         },
         {
           title: 'Analista de Negócios - Bemis/Amcor',
           year: '2016 - 2018',
           icon: 'mdi-account',
-          color: 'primary',
+          color: 'indigo',
           description: [
             '- Propor padrões, procedimentos e fornecer suporte técnico na identificação das alternativas e oportunidades de aplicações de Tecnologias de Informação para as áreas de RH.',
             '- Avaliação das evoluções de versões dos sistemas de RH identificando os impactos no modelo já implantado e o custo benefício dessas atualizações.',
@@ -149,14 +179,16 @@ export default {
             '- Avaliar continuamente os Projetos relacionados à área de RH, aferindo os benefícios esperados e calculando os referidos retornos do capital empregado (ROI).',
             '- Participar de reuniões com fornecedores de soluções e áreas administrativas da empresa para prestar suporte e esclarecer o atendimento aos requerimentos definidos e o completo entendimento das necessidades de TI e negócio.',
             '- Promover o relacionamento externo com fornecedores para o perfeito atendimento das necessidade e estratégias da companhia.',
-            '- Desenvolvimento de Correções e Melhorias para o Fatorhweb'
+            '- Desenvolvimento de Correções e Melhorias para o Fatorhweb',
+            '- Desenvolvimento de Relatórios Customizados com IReports e manutenção em código legado de código intra-company',
+            '- Manutenção e desenvolvimento de Procedures e Views no MSSQL'
           ]
         },
         {
           title: 'Estagiário Analista de Negócios - Bemis',
           year: '2014 - 2016',
           icon: 'mdi-account',
-          color: 'primary'
+          color: 'indigo'
         }
       ],
       educationItems: [
@@ -167,10 +199,26 @@ export default {
           color: 'primary'
         },
         {
+          title: 'Certicação C# - Exam 483 - Programming in C#',
+          icon: 'mdi-language-csharp',
+          year: '2019',
+          color: 'purple'
+        },
+        {
+          title: 'Capacitação em Green Belt Lean Seis Sigma - Fundação Vanzolini - 72 Horas (sem certificação)',
+          icon: 'mdi-google-analytics',
+          year: '2017',
+          color: 'green darken-4'
+        },
+        {
           title: 'IFSP - Análise e Desenvolvimento de Sistemas',
           year: '2013 - 2016',
           icon: 'mdi-glasses',
-          color: 'green'
+          color: 'green',
+          description: [
+            '- Projeto Final: Um sistema web em C# que a partir de HTML estático, gerava temas funcionais para ' +
+            'as plataformas Wordpress e Drupal'
+          ]
         },
         {
           title: 'SENAI - Técnico em eletrônica',
@@ -178,7 +226,11 @@ export default {
           icon: 'mdi-memory',
           color: 'red',
           description: [
-            'Ênfase em automação']
+            '- Ênfase em automação',
+            '- Projeto final foi um mini sistema em c++ que controlava o movimento de um robô em uma plano 2D ' +
+            'usando processamento de imagem de uma câmera externa',
+            '- Robô utilizava um micro-controlador PIC'
+          ]
         }
       ]
     }
